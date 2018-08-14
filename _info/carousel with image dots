@@ -1,0 +1,176 @@
+// $('#ingredientsDesc').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '#ingredientsSlider'
+// }); // ingredients descriptions
+$('#ingredientsSlider').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  // asNavFor: '#ingredientsDesc',
+  dots: true,
+  centerMode: true,
+  centerPadding: '60px',
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    }
+  ]
+}); // ingredients slider
+
+
+************ HTML ***********
+      <div class="ingredients-box">
+        <h2>Featured Ingredients</h2>
+        <div id="ingredientsDesc">
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/mulberry-root2.png" alt="Mulberry Root Extract">
+            </div>
+            <div class="ingredient-text">
+              <h5>Mulberry Root Extract</h5>
+              <p class="ingredient-prop">Brightens</p>
+              <p>This potent root native to Japan helps to brighten and even out skin tone by inhibiting the enzyme tyrosinase, which triggers uneven pigment production.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/hyaluronic-acid2.png" alt="Hyaluronic Acid">
+            </div>
+            <div class="ingredient-text">
+              <h5>Hyaluronic Acid</h5>
+              <p class="ingredient-prop">Nourishes and moisturizes</p>
+              <p>This easily absorbed nutrient and antioxidant helps to boost long-lasting moisture and revitalizes the skin’s outer layers.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/olive-fruit-oil2.png" alt="Olive Fruit Oil">
+            </div>
+            <div class="ingredient-text">
+              <h5>Olive Fruit Oil</h5>
+              <p class="ingredient-prop">Antioxidant, moisturizes skin</p>
+              <p>Rich in antioxidants, olive oil maintains the skin’s moisture barrier and helps fight damage caused by free radicals without clogging pores. Our oil is sourced from an organic olive farm in southern Spain.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/olive-leaf2.png" alt="Olive Leaf Extract">
+            </div>
+            <div class="ingredient-text">
+              <h5>Olive Leaf Extract</h5>
+              <p class="ingredient-prop">Antioxidant, hydrating</p>
+              <p>The leaf of the olive tree helps protect the skin against pollution and helps to fight the visible signs of aging.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/arnica-flower2.png" alt="Arnica Flower Extract">
+            </div>
+            <div class="ingredient-text">
+              <h5>Arnica Flower Extract</h5>
+              <p class="ingredient-prop">Soothes and conditions skin</p>
+              <p>Arnica has long been used to soothe irritated skin and moisturize dry skin, and it possesses powerful anti-inflammatory properties.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/perilla-leaf2.png" alt="Perilla Leaf Extract">
+            </div>
+            <div class="ingredient-text">
+              <h5>Perilla Leaf Extract</h5>
+              <p class="ingredient-prop">Restores softness and fights inflammation</p>
+              <p>Also called Japanese mint and ranging from bright green to deep purple, this leaf boasts antioxidant and anti-inflammatory properties, and increases the skin’s hydration.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/hydrolyzed-collagen2.png" alt="Hydrolyzed Collagen">
+            </div>
+            <div class="ingredient-text">
+              <h5>Hydrolyzed Collagen</h5>
+              <p class="ingredient-prop">Protects and moisturizes</p>
+              <p>Skin-plumping collagen is processed into ultra-tiny peptides, making it more easily absorbed and leaving skin feeling soft and supple.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/citric-acid2.png" alt="Citric Acid">
+            </div>
+            <div class="ingredient-text">
+              <h5>Citric Acid</h5>
+              <p class="ingredient-prop">Exfoliates, brightens</p>
+              <p>Helps promote pH balance and gently exfoliates skin so that beneficial ingredients can be absorbed. This alpha-hydroxy acid also brightens the skin’s appearance.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/vitamin-e2.png" alt="Vitamin E">
+            </div>
+            <div class="ingredient-text">
+              <h5>Vitamin E</h5>
+              <p class="ingredient-prop">Antioxidant, skin conditioner</p>
+              <p>Helps prevent the signs of premature aging by protecting skin against environmental pollution and free radicals, and helps other beneficial ingredients absorb into the skin more efficiently.</p>
+            </div>
+          </div>
+          <div class="ingredientDesc-long">
+            <div class="ingredientImg">
+              <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/angelica-root2.png" alt="Japanese Angelica Root Extract">
+            </div>
+            <div class="ingredient-text">
+              <h5>Japanese Angelica Root Extract</h5>
+              <p class="ingredient-prop">Conditions and moisturizes</p>
+              <p>This Japanese herb from the carrot family has been clinically proven to protect skin from the effects of photo-aging in a 2017 study at Keimyung University in South Korea.</p>
+            </div>
+          </div>
+        </div> <!-- ingredients descriptions -->
+        <!-- <div id="ingredientsSlider">
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/mulberry-root2.png" alt="mulberry root thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/hyaluronic-acid2.png" alt="hyaluronic acid thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/olive-fruit-oil2.png" alt="olive fruit oil thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/olive-leaf2.png" alt="olive leaf thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/arnica-flower2.png" alt="arnica flower thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/perilla-leaf2.png" alt="perilla leaf thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/hydrolyzed-collagen2.png" alt="hydrolyzed collagen thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/citric-acid2.png" alt="citric acid thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/vitamin-e2.png" alt="vitamin-e thumbnail">
+          </div>
+          <div class="ingredient">
+            <img src="https://www.dhccare.com/media/wysiwyg/content/collection/psn2/angelica-root2.png" alt="Japanese Angelica Root Extract thumbnail">
+          </div>
+        </div>  -->
+      </div> <!-- ingredients box -->
