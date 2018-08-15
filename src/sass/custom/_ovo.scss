@@ -7,5 +7,117 @@
   }
 }
 .hero {
+  position: relative;
 
-}
+  .heroBox {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 45%;
+    padding: 40px;
+    text-align: center;
+
+    .hero-heading {
+      width: 50%;
+      margin: 0 auto 20px auto;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    .hero-cta {
+      text-transform: uppercase;
+      padding: 10px 14px;
+      border: 1px solid $gray600;
+
+      &:hover {
+        background-color: $blue700;
+        color: #fff;
+      }
+    }
+  } // heroBox
+} // hero
+.info {
+  position: relative;
+
+  .infoBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    padding-right: 6%;
+    text-align: left;
+
+    .infoHeading-img {
+      float: left;
+      margin-left: -80px;
+      height: 270px;
+      z-index: 1;
+    }
+    .infoBox-txt {
+      width: 75%;
+      float: right;
+      margin-top: 20px;
+
+      .infoCallout {
+        margin-top: 20px;
+        border-top: 1px solid $gray600;
+        border-bottom: 1px solid $gray600;
+        z-index: 99;
+
+        img {
+          display: inline-block;
+          width: 30px;
+        }
+        p {
+          display: inline-block;
+          text-align: center;
+          width: 80%;
+          margin: 10px 0;
+        }
+      } // infoCallout
+    } // infoBox-txt
+  } // infoBox
+} // info
+.howMade {
+  position: relative;
+
+  .howMade-heading {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .steps-img {
+    width: 50%;
+    float: right;
+  }
+  .steps-txt {
+    margin-left: 8%;
+    width: 40%;
+    float: left;
+    text-align: left;
+
+    .step {
+      width: 70%;
+
+      .stepsDivider {
+        width: 48px;
+        margin: 20px auto;
+      }
+    } // step
+  } // steps-txt
+  .howMade-blog {
+    // clear: both;
+    // position: relative;
+    float: left;
+    margin-left: 8%;
+    margin-top: 40px;
+
+    p {
+      text-transform: uppercase;
+      a {
+        &:hover {
+          color: $blue700;
+        }
+      }
+    }
+  } //howMade-blog
+} // howMade

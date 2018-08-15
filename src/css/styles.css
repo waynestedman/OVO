@@ -189,4 +189,126 @@ body {
   }
 }
 
+.hero {
+  position: relative;
+}
+
+.hero .heroBox {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 45%;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero .heroBox .hero-heading {
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.hero .heroBox p {
+  margin-bottom: 40px;
+}
+
+.hero .heroBox .hero-cta {
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border: 1px solid #9E9E9E;
+}
+
+.hero .heroBox .hero-cta:hover {
+  background-color: #004098;
+  color: #fff;
+}
+
+.info {
+  position: relative;
+}
+
+.info .infoBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  padding-right: 6%;
+  text-align: left;
+}
+
+.info .infoBox .infoHeading-img {
+  float: left;
+  margin-left: -80px;
+  height: 270px;
+  z-index: 1;
+}
+
+.info .infoBox .infoBox-txt {
+  width: 75%;
+  float: right;
+  margin-top: 20px;
+}
+
+.info .infoBox .infoBox-txt .infoCallout {
+  margin-top: 20px;
+  border-top: 1px solid #9E9E9E;
+  border-bottom: 1px solid #9E9E9E;
+  z-index: 99;
+}
+
+.info .infoBox .infoBox-txt .infoCallout img {
+  display: inline-block;
+  width: 30px;
+}
+
+.info .infoBox .infoBox-txt .infoCallout p {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.howMade {
+  position: relative;
+}
+
+.howMade .howMade-heading {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.howMade .steps-img {
+  width: 50%;
+  float: right;
+}
+
+.howMade .steps-txt {
+  margin-left: 8%;
+  width: 40%;
+  float: left;
+  text-align: left;
+}
+
+.howMade .steps-txt .step {
+  width: 70%;
+}
+
+.howMade .steps-txt .step .stepsDivider {
+  width: 48px;
+  margin: 20px auto;
+}
+
+.howMade .howMade-blog {
+  float: left;
+  margin-left: 8%;
+  margin-top: 40px;
+}
+
+.howMade .howMade-blog p {
+  text-transform: uppercase;
+}
+
+.howMade .howMade-blog p a:hover {
+  color: #004098;
+}
+
 /*# sourceMappingURL=styles.css.map */
