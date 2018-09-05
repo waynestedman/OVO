@@ -121,3 +121,25 @@
     }
   } //howMade-blog
 } // howMade
+.uses {
+  .swabs {
+    .swabsBox {
+      float: right;
+      text-align: left;
+    } // swabsBox
+  } // swabs
+} // uses
+.regimen {
+  text-align: center;
+  .regimenBox {
+  } // regimenBox
+  .theRegimen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .reg {
+      flex-direction: column;
+    }
+  } // theRegimen
+} // regimen

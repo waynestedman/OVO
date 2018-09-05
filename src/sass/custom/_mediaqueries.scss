@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 599px) {
   // .cms-page-view .column.main p {
   //   margin: 0 auto 10px auto;
   // }
@@ -7,9 +7,9 @@
       margin-left: 0;
     }
   }
-} // Mobile & Tablet - everything smaller than 1024
+} // Mobile - everything smaller than 599
 
-@media only screen and (min-width: 640px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .content-wrapper {
 
   } // content wrapper
@@ -17,12 +17,12 @@
 
   } // hero
 } // min 650 to max 1024 - Tablet
-@media only screen and (min-width: 830px) and (max-width: 1024px) {
-  .hero {
-    .hero-text {
-
-    } // hero-text
-  } // hero
-} // min 830 to max 1024 - Tablet exceptions
+// @media only screen and (min-width: 830px) and (max-width: 1024px) {
+//   .hero {
+//     .hero-text {
+//
+//     } // hero-text
+//   } // hero
+// } // min 830 to max 1024 - Tablet exceptions
 // @media only screen and (min-width: 380px) and (max-width: 500px) {
 // } // min 376 to max 424 - Mobile exceptions

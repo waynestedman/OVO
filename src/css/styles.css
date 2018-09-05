@@ -19,7 +19,7 @@ body {
 }
 
 .cms-page-view .column.main img {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .columns .column.main {
@@ -123,13 +123,9 @@ body {
   line-height: 1.4;
 }
 
-.content-wrapper .weight400 {
-  font-weight: 400;
-}
-
 .content-wrapper a {
   text-decoration: none;
-  color: #212121;
+  color: #424649;
   cursor: pointer;
 }
 
@@ -309,6 +305,25 @@ body {
 
 .howMade .howMade-blog p a:hover {
   color: #004098;
+}
+
+.uses .swabs .swabsBox {
+  float: right;
+  text-align: left;
+}
+
+.regimen {
+  text-align: center;
+}
+
+.regimen .theRegimen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.regimen .theRegimen .reg {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
