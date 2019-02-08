@@ -349,6 +349,12 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 599px) {
+  .content-wrapper .slick-list {
+    margin-left: 0;
+  }
+}
+
 
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 {
   "name": "ovo",
-  "version": "2.0.1",
+  "version": "1.2.1",
   "description": "ovo product page",
   "main": "index.html",
   "scripts": {
@@ -10,20 +10,21 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/waynestedman/OVO.git"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
+    "autoprefixer": "^9.4.6",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-if": "^2.0.2",
-    "gulp-livereload": "^4.0.1",
+    "gulp-livereload": "^4.0.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
     "jquery": "^3.3.1",
+    "natives": "^1.1.6",
     "npm": "^6.4.1"
   },
   "keywords": [
