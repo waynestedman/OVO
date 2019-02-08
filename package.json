@@ -8,6 +8,10 @@
   },
   "author": "Wayne Stedman",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "gulp": "^3.9.1",
