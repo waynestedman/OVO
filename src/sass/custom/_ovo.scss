@@ -6,7 +6,7 @@
       to {opacity: 1;}
   }
 }
-.hero {
+#hero {
   position: relative;
 
   .heroBox {
@@ -35,22 +35,44 @@
       }
     }
   } // heroBox
+  .hero-img {
+
+  } // hero-img
 } // hero
-.info {
+#testimonialsSlider {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  // display: flex;
+  // flex-wrap: nowrap;
+  // justify-content: center;
+
+  .testimonial {
+    display: inline-block;
+    // width: 500px !important;
+    padding: 0 60px;
+
+    blockquote {
+      margin: 0;
+    }
+  }
+} // testimonials Slider
+#info {
   position: relative;
 
+  .infoImg {
+    width: 50%;
+  }
   .infoBox {
     position: absolute;
     top: 0;
     right: 0;
     width: 45%;
-    padding-right: 6%;
     text-align: left;
 
     .infoHeading-img {
       float: left;
       margin-left: -80px;
-      height: 270px;
       z-index: 1;
     }
     .infoBox-txt {
@@ -78,7 +100,7 @@
     } // infoBox-txt
   } // infoBox
 } // info
-.howMade {
+#howMade {
   position: relative;
 
   .howMade-heading {
@@ -121,7 +143,7 @@
     }
   } //howMade-blog
 } // howMade
-.uses {
+#uses {
   .swabs {
     .swabsBox {
       float: right;
@@ -129,17 +151,15 @@
     } // swabsBox
   } // swabs
 } // uses
-.regimen {
-  text-align: center;
-  .regimenBox {
-  } // regimenBox
-  .theRegimen {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#closing {
+  text-align: left;
 
-    .reg {
-      flex-direction: column;
-    }
-  } // theRegimen
-} // regimen
+  .closing-img {
+    width: 50%;
+    float: left;
+  }
+  .closingBox {
+    width: 50%;
+    float: right;
+  }
+} // closing
