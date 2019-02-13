@@ -1,9 +1,26 @@
+// ovo Colors:
+// main blue = $blue700
+$iconBlue: #DCE6F2;
+$bkgrndBlue: #F5F9FC;
 
 .content-wrapper {
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
       from {opacity: 0;}
       to {opacity: 1;}
+  }
+  h3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+  h5 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
   }
 }
 #hero {
@@ -15,7 +32,7 @@
     left: 0;
     width: 45%;
     padding: 40px;
-    text-align: center;
+    text-align: left;
 
     .hero-heading {
       width: 50%;
@@ -25,13 +42,14 @@
       margin-bottom: 40px;
     }
     .hero-cta {
+      background-color: $blue700;
+      color: #fff;
       text-transform: uppercase;
       padding: 10px 14px;
-      border: 1px solid $gray600;
+      border: 1px solid $blue700;
 
       &:hover {
-        background-color: $blue700;
-        color: #fff;
+        background-color: $blue400;
       }
     }
   } // heroBox
@@ -40,6 +58,7 @@
   } // hero-img
 } // hero
 #testimonialsSlider {
+  background-color: $bkgrndBlue;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -52,53 +71,32 @@
     // width: 500px !important;
     padding: 0 60px;
 
+    h3 {
+      color: $blue700;
+    }
     blockquote {
       margin: 0;
     }
   }
 } // testimonials Slider
 #info {
-  position: relative;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 
   .infoImg {
+    display: inline-block;
     width: 50%;
   }
-  .infoBox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    text-align: left;
-
-    .infoHeading-img {
-      float: left;
-      margin-left: -80px;
-      z-index: 1;
-    }
-    .infoBox-txt {
-      width: 75%;
-      float: right;
-      margin-top: 20px;
-
-      .infoCallout {
-        margin-top: 20px;
-        border-top: 1px solid $gray600;
-        border-bottom: 1px solid $gray600;
-        z-index: 99;
-
-        img {
-          display: inline-block;
-          width: 30px;
-        }
-        p {
-          display: inline-block;
-          text-align: center;
-          width: 80%;
-          margin: 10px 0;
-        }
-      } // infoCallout
-    } // infoBox-txt
-  } // infoBox
+  .infoIntro {
+    display: inline-block;
+    width: 40%;
+    max-height: 400px;
+  } // infoIntro
+  .infoList {
+    display: inline-block;
+    width: 40%;
+  }
 } // info
 #howMade {
   position: relative;
@@ -144,12 +142,11 @@
   } //howMade-blog
 } // howMade
 #uses {
-  .swabs {
-    .swabsBox {
-      float: right;
-      text-align: left;
-    } // swabsBox
-  } // swabs
+  background-color: $bkgrndBlue;
+
+  .use {
+    width: 30%;
+  }
 } // uses
 #closing {
   text-align: left;

@@ -198,6 +198,22 @@ body {
   }
 }
 
+.content-wrapper h3 {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.content-wrapper h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.content-wrapper h5 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
 #hero {
   position: relative;
 }
@@ -208,7 +224,7 @@ body {
   left: 0;
   width: 45%;
   padding: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 #hero .heroBox .hero-heading {
@@ -221,17 +237,19 @@ body {
 }
 
 #hero .heroBox .hero-cta {
+  background-color: #004098;
+  color: #fff;
   text-transform: uppercase;
   padding: 10px 14px;
-  border: 1px solid #9E9E9E;
+  border: 1px solid #004098;
 }
 
 #hero .heroBox .hero-cta:hover {
-  background-color: #004098;
-  color: #fff;
+  background-color: #B1C9E8;
 }
 
 #testimonialsSlider {
+  background-color: #F5F9FC;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -242,55 +260,37 @@ body {
   padding: 0 60px;
 }
 
+#testimonialsSlider .testimonial h3 {
+  color: #004098;
+}
+
 #testimonialsSlider .testimonial blockquote {
   margin: 0;
 }
 
 #info {
-  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #info .infoImg {
+  display: inline-block;
   width: 50%;
 }
 
-#info .infoBox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45%;
-  text-align: left;
-}
-
-#info .infoBox .infoHeading-img {
-  float: left;
-  margin-left: -80px;
-  z-index: 1;
-}
-
-#info .infoBox .infoBox-txt {
-  width: 75%;
-  float: right;
-  margin-top: 20px;
-}
-
-#info .infoBox .infoBox-txt .infoCallout {
-  margin-top: 20px;
-  border-top: 1px solid #9E9E9E;
-  border-bottom: 1px solid #9E9E9E;
-  z-index: 99;
-}
-
-#info .infoBox .infoBox-txt .infoCallout img {
+#info .infoIntro {
   display: inline-block;
-  width: 30px;
+  width: 40%;
+  max-height: 400px;
 }
 
-#info .infoBox .infoBox-txt .infoCallout p {
+#info .infoList {
   display: inline-block;
-  text-align: center;
-  width: 80%;
-  margin: 10px 0;
+  width: 40%;
 }
 
 #howMade {
@@ -337,9 +337,12 @@ body {
   color: #004098;
 }
 
-#uses .swabs .swabsBox {
-  float: right;
-  text-align: left;
+#uses {
+  background-color: #F5F9FC;
+}
+
+#uses .use {
+  width: 30%;
 }
 
 #closing {
@@ -359,6 +362,21 @@ body {
 @media only screen and (max-width: 599px) {
   .content-wrapper .slick-list {
     margin-left: 0;
+  }
+  #info .infoImg {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #info .infoIntro {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  #info .infoList {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
 }
 
