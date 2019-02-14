@@ -5,11 +5,13 @@ $(document).ready(function(){
     // autoplay: true,
     // autoplaySpeed: 4000,
     // fade: true,
+    focusOnChange: true,
     speed: 1200,
     // cssEase: 'ease-in-out',
-    infinite: false,
+    infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+    swipe: true,
     responsive: [
       {
         breakpoint: 700,
@@ -22,41 +24,23 @@ $(document).ready(function(){
       }
     ]
   }); // testimonials slider
-  // $('#ingredientsDesc').slick({
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     arrows: false,
-  //     fade: true,
-  //     asNavFor: '#ingredientsSlider'
-  // });
-  // $('#ingredientsSlider').slick({
-  //   slidesToShow: 7,
-  //   slidesToScroll: 1,
-  //   asNavFor: '#ingredientsDesc',
-  //   dots: false,
-  //   centerMode: true,
-  //   centerPadding: '60px',
-  //   focusOnSelect: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1025,
-  //       settings: {
-  //         arrows: true,
-  //         centerMode: true,
-  //         centerPadding: '40px',
-  //         slidesToShow: 5
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         arrows: true,
-  //         centerMode: true,
-  //         centerPadding: '40px',
-  //         slidesToShow: 3
-  //       }
-  //     }
-  //   ]
-  // });
+
+$('#usesSlider-imgs').slick({
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ arrows: false,
+ fade: true,
+ asNavFor: '#usesSlider-text'
+});
+$('#usesSlider-text').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '#usesSlider-imgs',
+  dots: true,
+  fade: true,
+  // centerMode: true,
+  focusOnSelect: true
+});
+
 
 }); //doc ready

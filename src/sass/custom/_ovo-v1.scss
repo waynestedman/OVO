@@ -142,37 +142,25 @@ $bkgrndBlue: #F5F9FC;
   } //howMade-blog
 } // howMade
 #uses {
-  background-color: $bkgrndBlue;
-  margin-bottom: 4rem;
 
-  .usesIntro {
-    width: 60%;
-    background-color: #FFFFFF;
-    margin-bottom: -1rem;
-  }
-  #usesSlider-text {
-    width: 45%;
-    float: left;
-    padding: 6% 0 6% 8%;
+  .usesSlider-wrapper {
+    background-color: $bkgrndBlue;
 
-    .use-text {
+    #usesSlider {
       width: 40%;
-      background-color: #FFFFFF;
-      padding: 4rem 10rem 10rem 4rem;
-      margin: 0 auto;
+      padding:: 8% 0 8% 6%;
 
-    }
-  } // usesSlider-text
-  #usesSlider-imgs {
-    .use-img {
-      max-width: 1280px;
+      .use-text {
+        background-color: #FFFFFF;
+        padding: 4rem;
+        margin: 0 auto;
 
-      img {
-
-        margin: 0;
+        p {
+          width: 30%;
+        }
       }
-    }
-  } // usesSlider-imgs
+    } // usesSlider
+  }
 } // uses
 #closing {
   text-align: left;
