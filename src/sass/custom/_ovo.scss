@@ -22,10 +22,19 @@ $bkgrndBlue: #F5F9FC;
     font-size: 1.6rem;
     margin: 1rem 0;
   }
+  .button-cta {
+    background-color: $blue700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    border: 1px solid $blue700;
+
+    &:hover {
+      background-color: $blue400;
+    }
+  }
 }
 #hero {
-  position: relative;
-
   .heroBox {
     position: absolute;
     top: 12%;
@@ -41,23 +50,13 @@ $bkgrndBlue: #F5F9FC;
     p {
       margin-bottom: 40px;
     }
-    .hero-cta {
-      background-color: $blue700;
-      color: #fff;
-      text-transform: uppercase;
-      padding: 10px 14px;
-      border: 1px solid $blue700;
-
-      &:hover {
-        background-color: $blue400;
-      }
-    }
   } // heroBox
   .hero-img {
 
   } // hero-img
 } // hero
 #testimonialsSlider {
+
   background-color: $bkgrndBlue;
   width: 90%;
   margin: 0 auto;
@@ -80,20 +79,27 @@ $bkgrndBlue: #F5F9FC;
   }
 } // testimonials Slider
 #info {
+  background-image: url('../../images/info.jpg');
+  background-repeat: no-repeat;
+  background-size: 37% 100%;
+  background-position: top left;
   text-align: left;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
 
   .infoImg {
-    display: inline-block;
+    display: none;
     width: 50%;
   }
   .infoIntro {
+    margin-left: 50%;
     display: inline-block;
     width: 40%;
     max-height: 400px;
   } // infoIntro
   .infoList {
+    margin-left: 50%;
     display: inline-block;
     width: 40%;
   }
@@ -101,54 +107,18 @@ $bkgrndBlue: #F5F9FC;
 #howMade {
   position: relative;
 
-  .howMade-heading {
-    margin: 0 auto;
-    width: 50%;
-  }
-  .steps-img {
-    width: 50%;
-    float: right;
-  }
-  .steps-txt {
-    margin-left: 8%;
-    width: 40%;
-    float: left;
-    text-align: left;
 
-    .step {
-      width: 70%;
-
-      .stepsDivider {
-        width: 48px;
-        margin: 20px auto;
-      }
-    } // step
-  } // steps-txt
-  .howMade-blog {
-    // clear: both;
-    // position: relative;
-    float: left;
-    margin-left: 8%;
-    margin-top: 40px;
-
-    p {
-      text-transform: uppercase;
-      a {
-        &:hover {
-          color: $blue700;
-        }
-      }
-    }
-  } //howMade-blog
 } // howMade
 #uses {
   background-color: $bkgrndBlue;
   margin-bottom: 4rem;
 
   .usesIntro {
-    width: 60%;
+    // width: 60%;
     background-color: #FFFFFF;
+    margin-left: 50%;
     margin-bottom: -1rem;
+    padding-bottom: 4%;
   }
   #usesSlider-text {
     width: 45%;
@@ -168,7 +138,6 @@ $bkgrndBlue: #F5F9FC;
       max-width: 1280px;
 
       img {
-
         margin: 0;
       }
     }
