@@ -33,31 +33,34 @@ $bkgrndBlue: #F5F9FC;
       background-color: $blue400;
     }
   }
+  .clearfix {
+    @include clearfix;
+  }
 }
 #hero {
+  position: relative;
+
   .heroBox {
     position: absolute;
     top: 12%;
     left: 0;
-    width: 45%;
+    width: 50%;
     padding: 40px;
     text-align: left;
 
-    .hero-heading {
-      width: 50%;
-      margin: 0 auto 20px auto;
-    }
     p {
       margin-bottom: 40px;
     }
   } // heroBox
   .hero-img {
-
+    width: 100%;
+    margin: 0 auto 20px auto;
   } // hero-img
 } // hero
-#testimonialsSlider {
-
+#testimonials {
   background-color: $bkgrndBlue;
+}
+#testimonialsSlider {
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -107,7 +110,12 @@ $bkgrndBlue: #F5F9FC;
 #howMade {
   position: relative;
 
-
+  .howMade-txt {
+    margin-left: 4%;
+    a {
+      font-weight: 500;
+    }
+  } // howMade-txt
 } // howMade
 #uses {
   background-color: $bkgrndBlue;
@@ -144,14 +152,26 @@ $bkgrndBlue: #F5F9FC;
   } // usesSlider-imgs
 } // uses
 #closing {
+  // clear: both;
+  position: relative;
+  background-color: #ffffff;
   text-align: left;
+  height: 100%;
 
   .closing-img {
     width: 50%;
     float: left;
   }
   .closingBox {
-    width: 50%;
+    width: 42%;
     float: right;
-  }
+
+    p {
+      margin: 40px 0;
+    }
+    .button-cta {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  } // closingBox
 } // closing

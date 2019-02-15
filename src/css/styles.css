@@ -35,7 +35,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   line-height: 1.4;
-  background: #fff;
+  background: #FFFFFF;
 }
 
 .content-wrapper .row {
@@ -213,26 +213,49 @@ body {
   background-color: #B1C9E8;
 }
 
+.content-wrapper .clearfix {
+  display: block;
+}
+
+.content-wrapper .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .content-wrapper .clearfix {
+  height: 1px;
+}
+
+#hero {
+  position: relative;
+}
+
 #hero .heroBox {
   position: absolute;
   top: 12%;
   left: 0;
-  width: 45%;
+  width: 50%;
   padding: 40px;
   text-align: left;
-}
-
-#hero .heroBox .hero-heading {
-  width: 50%;
-  margin: 0 auto 20px auto;
 }
 
 #hero .heroBox p {
   margin-bottom: 40px;
 }
 
-#testimonialsSlider {
+#hero .hero-img {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+#testimonials {
   background-color: #F5F9FC;
+}
+
+#testimonialsSlider {
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -284,6 +307,14 @@ body {
   position: relative;
 }
 
+#howMade .howMade-txt {
+  margin-left: 4%;
+}
+
+#howMade .howMade-txt a {
+  font-weight: 500;
+}
+
 #uses {
   background-color: #F5F9FC;
   margin-bottom: 4rem;
@@ -318,7 +349,10 @@ body {
 }
 
 #closing {
+  position: relative;
+  background-color: #ffffff;
   text-align: left;
+  height: 100%;
 }
 
 #closing .closing-img {
@@ -327,8 +361,17 @@ body {
 }
 
 #closing .closingBox {
-  width: 50%;
+  width: 42%;
   float: right;
+}
+
+#closing .closingBox p {
+  margin: 40px 0;
+}
+
+#closing .closingBox .button-cta {
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 @media only screen and (max-width: 599px) {
