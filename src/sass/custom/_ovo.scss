@@ -49,7 +49,13 @@ $bkgrndBlue: #F5F9FC;
     text-align: left;
 
     p {
+      padding-right: 10%;
       margin-bottom: 40px;
+    }
+    img {
+      margin: -80px -60px 0 0;
+      float: right;
+      width: 100px;
     }
   } // heroBox
   .hero-img {
@@ -64,17 +70,17 @@ $bkgrndBlue: #F5F9FC;
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  // display: flex;
-  // flex-wrap: nowrap;
-  // justify-content: center;
 
   .testimonial {
     display: inline-block;
-    // width: 500px !important;
     padding: 0 60px;
 
     h3 {
       color: $blue700;
+    }
+    img {
+      width: 150px;
+      margin: 0 auto;
     }
     blockquote {
       margin: 0;
@@ -102,10 +108,22 @@ $bkgrndBlue: #F5F9FC;
     max-height: 400px;
   } // infoIntro
   .infoList {
-    margin-left: 50%;
+    margin-left: 47%;
     display: inline-block;
     width: 40%;
-  }
+
+    ul {
+      list-style-type: none;
+    }
+    li {
+      background-image: url('../../images/bullet.svg');
+      background-size: 20px;
+      background-position: 0 6px ;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+    }
+
+  } // infoList
 } // info
 #howMade {
   position: relative;
