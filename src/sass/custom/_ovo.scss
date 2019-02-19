@@ -48,6 +48,9 @@ $bkgrndBlue: #F5F9FC;
     padding: 40px;
     text-align: left;
 
+    .heroBox-title {
+      // width: 50%;
+    }
     p {
       padding-right: 10%;
       margin-bottom: 40px;
@@ -88,9 +91,9 @@ $bkgrndBlue: #F5F9FC;
   }
 } // testimonials Slider
 #info {
-  background-image: url('../../images/info.jpg');
+  background-image: url('../../images/ingredient.jpg');
   background-repeat: no-repeat;
-  background-size: 37% 100%;
+  background-size: 40% 100%;
   background-position: top left;
   text-align: left;
   display: flex;
@@ -100,6 +103,10 @@ $bkgrndBlue: #F5F9FC;
   .infoImg {
     display: none;
     width: 50%;
+  }
+  .infoTitle {
+    width: 50%;
+    margin: 0 auto;
   }
   .infoIntro {
     margin-left: 50%;
@@ -127,26 +134,51 @@ $bkgrndBlue: #F5F9FC;
 } // info
 #howMade {
   position: relative;
-
+  .howMade-img {
+    position: relative;
+    padding-top: 4rem;
+  }
   .howMade-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
     margin-left: 4%;
+
+    .howMade-title {
+      width: 46%;
+    }
     a {
-      font-weight: 500;
+      font-weight: 600;
     }
   } // howMade-txt
+
 } // howMade
 #uses {
   background-color: $bkgrndBlue;
   margin-bottom: 4rem;
+  position: relative;
 
-  .usesIntro {
-    // width: 60%;
+  .uses-title {
     background-color: #FFFFFF;
-    margin-left: 50%;
-    margin-bottom: -1rem;
-    padding-bottom: 4%;
+    float: left;
+    width: 40%;
+    display: inline-block;
+
+    img {
+      max-height: 92px;
+    }
+  }
+  .usesIntro {
+    display: inline-block;
+    width: 60%;
+    background-color: #FFFFFF;
+    // margin-left: 50%;
+    // margin-bottom: -1rem;
+    padding-left: 6%;
+    padding-bottom: 3%;
   }
   #usesSlider-text {
+    clear: both;
     width: 45%;
     float: left;
     padding: 6% 0 6% 8%;
@@ -181,10 +213,14 @@ $bkgrndBlue: #F5F9FC;
     float: left;
   }
   .closingBox {
-    width: 42%;
+    width: 50%;
     float: right;
 
+    .closingBox-title {
+      width: 50%;
+    }
     p {
+      max-width: 450px;
       margin: 40px 0;
     }
     .button-cta {

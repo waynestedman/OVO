@@ -287,9 +287,9 @@ body {
 }
 
 #info {
-  background-image: url("../../images/info.jpg");
+  background-image: url("../../images/ingredient.jpg");
   background-repeat: no-repeat;
-  background-size: 37% 100%;
+  background-size: 40% 100%;
   background-position: top left;
   text-align: left;
   display: flex;
@@ -300,6 +300,11 @@ body {
 #info .infoImg {
   display: none;
   width: 50%;
+}
+
+#info .infoTitle {
+  width: 50%;
+  margin: 0 auto;
 }
 
 #info .infoIntro {
@@ -331,27 +336,53 @@ body {
   position: relative;
 }
 
+#howMade .howMade-img {
+  position: relative;
+  padding-top: 4rem;
+}
+
 #howMade .howMade-txt {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-left: 4%;
 }
 
+#howMade .howMade-txt .howMade-title {
+  width: 46%;
+}
+
 #howMade .howMade-txt a {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #uses {
   background-color: #F5F9FC;
   margin-bottom: 4rem;
+  position: relative;
+}
+
+#uses .uses-title {
+  background-color: #FFFFFF;
+  float: left;
+  width: 40%;
+  display: inline-block;
+}
+
+#uses .uses-title img {
+  max-height: 92px;
 }
 
 #uses .usesIntro {
+  display: inline-block;
+  width: 60%;
   background-color: #FFFFFF;
-  margin-left: 50%;
-  margin-bottom: -1rem;
-  padding-bottom: 4%;
+  padding-left: 6%;
+  padding-bottom: 3%;
 }
 
 #uses #usesSlider-text {
+  clear: both;
   width: 45%;
   float: left;
   padding: 6% 0 6% 8%;
@@ -385,11 +416,16 @@ body {
 }
 
 #closing .closingBox {
-  width: 42%;
+  width: 50%;
   float: right;
 }
 
+#closing .closingBox .closingBox-title {
+  width: 50%;
+}
+
 #closing .closingBox p {
+  max-width: 450px;
   margin: 40px 0;
 }
 
