@@ -167,8 +167,12 @@ body {
   font-size: 0;
 }
 
+.content-wrapper .slick-prev:before, .content-wrapper .slick-next:before {
+  color: none;
+}
+
 .content-wrapper .slick-arrow {
-  background: none;
+  border: none;
 }
 
 .content-wrapper .linkCTA {
@@ -255,12 +259,23 @@ body {
   text-align: left;
 }
 
+#hero .heroBox .heroBox-title {
+  margin-top: 4rem;
+  max-width: 470px;
+}
+
+#hero .heroBox h2 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
 #hero .heroBox p {
   padding-right: 10%;
   margin-bottom: 40px;
 }
 
-#hero .heroBox img {
+#hero .heroBox .badge {
   margin: -80px -60px 0 0;
   float: right;
   width: 100px;
@@ -273,6 +288,9 @@ body {
 
 #testimonials {
   background-color: #F5F9FC;
+  background-image: url("../../images/white-icon.svg");
+  background-repeat: repeat;
+  background-size: 48px;
 }
 
 #testimonialsSlider {
@@ -378,6 +396,10 @@ body {
 
 #uses {
   background-color: #F5F9FC;
+  background-image: url("../../images/blue-icon.svg");
+  background-position: 2% -0.5%;
+  background-repeat: repeat;
+  background-size: 48px;
   margin-bottom: 4rem;
   position: relative;
 }

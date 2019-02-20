@@ -49,13 +49,19 @@ $bkgrndBlue: #F5F9FC;
     text-align: left;
 
     .heroBox-title {
-      // width: 50%;
+      margin-top: 4rem;
+      max-width: 470px;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: 400;
     }
     p {
       padding-right: 10%;
       margin-bottom: 40px;
     }
-    img {
+    .badge {
       margin: -80px -60px 0 0;
       float: right;
       width: 100px;
@@ -68,6 +74,9 @@ $bkgrndBlue: #F5F9FC;
 } // hero
 #testimonials {
   background-color: $bkgrndBlue;
+  background-image: url("../../images/white-icon.svg");
+  background-repeat: repeat;
+  background-size: 48px;
 }
 #testimonialsSlider {
   width: 90%;
@@ -155,6 +164,10 @@ $bkgrndBlue: #F5F9FC;
 } // howMade
 #uses {
   background-color: $bkgrndBlue;
+  background-image: url("../../images/blue-icon.svg");
+  background-position: 2% -0.5%;
+  background-repeat: repeat;
+  background-size: 48px;
   margin-bottom: 4rem;
   position: relative;
 

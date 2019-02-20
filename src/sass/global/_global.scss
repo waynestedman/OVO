@@ -123,9 +123,14 @@ body {
   }
   .slick-prev, .slick-next {
     font-size: 0;
+
+    &:before {
+      color: none;
+    }
   }
   .slick-arrow {
-    background: none;
+    // background: none;
+    border: none;
   }
   .linkCTA {
     font-weight: 700;
