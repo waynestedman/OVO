@@ -503,7 +503,7 @@ body {
   padding-right: 12%;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 699px) {
   .content-wrapper .slick-list {
     margin-left: 0;
   }
