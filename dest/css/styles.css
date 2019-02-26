@@ -202,8 +202,12 @@ body {
   }
 }
 
+.content-wrapper h2 {
+  font-size: 2rem;
+}
+
 .content-wrapper h3 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -219,6 +223,7 @@ body {
 }
 
 .content-wrapper .button-cta {
+  font-size: 1.4rem;
   background-color: #004098;
   color: #fff;
   text-transform: uppercase;
@@ -228,6 +233,10 @@ body {
 
 .content-wrapper .button-cta:hover {
   background-color: #B1C9E8;
+}
+
+.content-wrapper blockquote {
+  font-size: 2rem;
 }
 
 .content-wrapper .clearfix {
@@ -261,13 +270,13 @@ body {
 
 #hero .heroBox .heroBox-title {
   margin-top: 4rem;
-  max-width: 470px;
+  margin-left: -8rem;
 }
 
 #hero .heroBox h2 {
   margin-top: 0;
-  font-size: 3rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 #hero .heroBox p {
@@ -299,22 +308,33 @@ body {
   text-align: center;
 }
 
+#testimonialsSlider .slick-prev {
+  left: -10px;
+}
+
+#testimonialsSlider .slick-next {
+  right: -10px;
+}
+
 #testimonialsSlider .testimonial {
-  display: inline-block;
-  padding: 0 60px;
+  display: inline;
+  padding: 20px 60px;
 }
 
 #testimonialsSlider .testimonial h3 {
+  font-size: 2.3rem;
   color: #004098;
 }
 
 #testimonialsSlider .testimonial img {
   width: 150px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 #testimonialsSlider .testimonial blockquote {
+  font-size: 1.7rem;
   margin: 0;
+  text-align: center;
 }
 
 #info {
@@ -395,11 +415,6 @@ body {
 }
 
 #uses {
-  background-color: #F5F9FC;
-  background-image: url("../../images/blue-icon.svg");
-  background-position: 2% -0.5%;
-  background-repeat: repeat;
-  background-size: 48px;
   margin-bottom: 4rem;
   position: relative;
 }
@@ -418,15 +433,22 @@ body {
 #uses .usesIntro {
   display: inline-block;
   width: 60%;
-  background-color: #FFFFFF;
+  font-weight: 300;
   padding-left: 6%;
   padding-bottom: 3%;
 }
 
 #uses #usesSlider-text {
+  position: relative;
+  background-color: #DCE6F2;
+  background-image: url("../../images/blue-icon.svg");
+  background-position: 2% -0.5%;
+  background-repeat: repeat;
+  background-size: 48px;
+  float: left;
   clear: both;
   width: 45%;
-  float: left;
+  max-height: 500px;
   padding: 6% 0 6% 8%;
 }
 
@@ -434,11 +456,36 @@ body {
   width: 40%;
   background-color: #FFFFFF;
   padding: 4rem 10rem 10rem 4rem;
-  margin: 0 auto;
+  min-height: 368px;
+}
+
+#uses #usesSlider-text .slick-arrow {
+  margin-top: 166px;
+}
+
+#uses #usesSlider-text .slick-prev {
+  left: 88px;
+}
+
+#uses #usesSlider-text .slick-dots {
+  bottom: 60px;
+  width: 80%;
+  margin-left: -7px;
+}
+
+#uses #usesSlider-text .slick-dots li button:before {
+  font-size: 4rem;
+  color: #004098;
+}
+
+#uses #usesSlider-imgs {
+  position: relative;
 }
 
 #uses #usesSlider-imgs .use-img {
   max-width: 1280px;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 #uses #usesSlider-imgs .use-img img {

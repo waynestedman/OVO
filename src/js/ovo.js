@@ -33,6 +33,7 @@ $('#usesSlider-imgs').slick({
  asNavFor: '#usesSlider-text'
 });
 $('#usesSlider-text').slick({
+  // appendArrows: '.use-text',
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '#usesSlider-imgs',
