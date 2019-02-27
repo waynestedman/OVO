@@ -7,24 +7,131 @@
       margin-left: 0;
     }
   }
+  #hero {
+    .hero-img {
+      margin-bottom: 0;
+    }
+    .heroBox {
+      // position: relative;
+      top: 34%;
+      width: 100%;
+      padding: 0 0 0 4%;
+
+      .heroBox-title {
+        margin: 0 0 0 -14%;
+        width: 120%;
+      }
+      h2 {
+        margin-top: -10px;
+        margin-bottom: 16px;
+      }
+      p {
+        line-height: 1.3;
+        margin-bottom: 30px;
+      }
+
+      .badge {
+        margin: -20px 0 0 0;
+      }
+    } // heroBox
+  }
   #info {
+    background: none;
+
     .infoImg {
+      display: block;
+      width: 100%;
       order: 2;
     }
+    .infoTitle {
+      width: 100%;
+    }
     .infoIntro {
+      margin-left: initial;
+      padding: 0 4%;
+      width: 100%;
       order: 1;
     }
     .infoList {
+      margin-left: initial;
+      margin-top: -20px;
+      padding: 0;
+      width: 100%;
       order: 3;
     }
   } // info
+  #howMade {
+    .howMade-img {
+      padding-top: 8rem;
+    }
+    .howMade-txt {
+      .howMade-title {
+        width: 100%;
+        margin-left: -2%;
+      }
+    }
+  } // howMade
+  #uses {
+    margin-bottom: 0;
+
+    .uses-title {
+      width: 100%;
+    }
+    .usesIntro {
+      width: 96%;
+    }
+    #usesSlider-imgs {
+      width: 100%;
+      float: none;
+    } // usesSlider-imgs
+    #usesSlider-text {
+      width: 100%;
+      padding: 0 0 4rem 0;
+
+      .use-text {
+        width: 100%;
+        padding-bottom: 0;
+        padding-right: 2%;
+        // min-height: 300px;
+        // max-height: 340px;
+      }
+      .slick-arrow {
+        margin-top: 104px;
+      }
+      .slick-prev {
+        left: 0;
+      }
+      .slick-dots {
+        bottom: 60px;
+        margin-left: 42px;
+      }
+    } // usesSlider-text
+  } // uses
+  #closing {
+    .closing-img {
+      width: 100%;
+      float: none;
+    }
+    .closingBox {
+      width: 100%;
+
+      .closingBox-title {
+        width: 100%;
+      }
+      p {
+        max-width: none;
+        margin: 20px auto;
+        padding: 0 4%;
+      }
+    } // closingBox
+  } // closing
 } // Mobile - everything smaller than 700
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .content-wrapper {
 
   } // content wrapper
-} // min 650 to max 1024 - Tablet
+} // min 700 to max 1024 - Tablet
 
 // @media only screen and (min-width: 830px) and (max-width: 1024px) {
 //   .hero {

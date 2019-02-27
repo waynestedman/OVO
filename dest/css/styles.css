@@ -438,29 +438,40 @@ body {
   padding-bottom: 3%;
 }
 
+#uses #usesSlider-imgs {
+  width: 52%;
+  float: right;
+}
+
+#uses #usesSlider-imgs .use-img {
+  max-width: 700px;
+  overflow: hidden;
+}
+
+#uses #usesSlider-imgs .use-img img {
+  margin: 0;
+}
+
 #uses #usesSlider-text {
-  position: relative;
   background-color: #DCE6F2;
   background-image: url("../../images/blue-icon.svg");
   background-position: 2% -0.5%;
   background-repeat: repeat;
   background-size: 48px;
-  float: left;
-  clear: both;
-  width: 45%;
-  max-height: 500px;
+  width: 47%;
+  max-height: 502px;
   padding: 6% 0 6% 8%;
 }
 
 #uses #usesSlider-text .use-text {
-  width: 40%;
+  width: 52%;
   background-color: #FFFFFF;
-  padding: 4rem 10rem 10rem 4rem;
-  min-height: 368px;
+  padding: 4rem 2rem 10rem 4rem;
+  min-height: 336px;
 }
 
 #uses #usesSlider-text .slick-arrow {
-  margin-top: 166px;
+  margin-top: 140px;
 }
 
 #uses #usesSlider-text .slick-prev {
@@ -468,7 +479,7 @@ body {
 }
 
 #uses #usesSlider-text .slick-dots {
-  bottom: 60px;
+  bottom: 84px;
   width: 80%;
   margin-left: -7px;
 }
@@ -476,20 +487,6 @@ body {
 #uses #usesSlider-text .slick-dots li button:before {
   font-size: 4rem;
   color: #004098;
-}
-
-#uses #usesSlider-imgs {
-  position: relative;
-}
-
-#uses #usesSlider-imgs .use-img {
-  max-width: 1280px;
-  max-height: 500px;
-  overflow: hidden;
-}
-
-#uses #usesSlider-imgs .use-img img {
-  margin: 0;
 }
 
 #closing {
@@ -527,20 +524,112 @@ body {
   .content-wrapper .slick-list {
     margin-left: 0;
   }
+  #hero .hero-img {
+    margin-bottom: 0;
+  }
+  #hero .heroBox {
+    top: 34%;
+    width: 100%;
+    padding: 0 0 0 4%;
+  }
+  #hero .heroBox .heroBox-title {
+    margin: 0 0 0 -14%;
+    width: 120%;
+  }
+  #hero .heroBox h2 {
+    margin-top: -10px;
+    margin-bottom: 16px;
+  }
+  #hero .heroBox p {
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  #hero .heroBox .badge {
+    margin: -20px 0 0 0;
+  }
+  #info {
+    background: none;
+  }
   #info .infoImg {
+    display: block;
+    width: 100%;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
+  #info .infoTitle {
+    width: 100%;
+  }
   #info .infoIntro {
+    margin-left: initial;
+    padding: 0 4%;
+    width: 100%;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
   #info .infoList {
+    margin-left: initial;
+    margin-top: -20px;
+    padding: 0;
+    width: 100%;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+  }
+  #howMade .howMade-img {
+    padding-top: 8rem;
+  }
+  #howMade .howMade-txt .howMade-title {
+    width: 100%;
+    margin-left: -2%;
+  }
+  #uses {
+    margin-bottom: 0;
+  }
+  #uses .uses-title {
+    width: 100%;
+  }
+  #uses .usesIntro {
+    width: 96%;
+  }
+  #uses #usesSlider-imgs {
+    width: 100%;
+    float: none;
+  }
+  #uses #usesSlider-text {
+    width: 100%;
+    padding: 0 0 4rem 0;
+  }
+  #uses #usesSlider-text .use-text {
+    width: 100%;
+    padding-bottom: 0;
+    padding-right: 2%;
+  }
+  #uses #usesSlider-text .slick-arrow {
+    margin-top: 104px;
+  }
+  #uses #usesSlider-text .slick-prev {
+    left: 0;
+  }
+  #uses #usesSlider-text .slick-dots {
+    bottom: 60px;
+    margin-left: 42px;
+  }
+  #closing .closing-img {
+    width: 100%;
+    float: none;
+  }
+  #closing .closingBox {
+    width: 100%;
+  }
+  #closing .closingBox .closingBox-title {
+    width: 100%;
+  }
+  #closing .closingBox p {
+    max-width: none;
+    margin: 20px auto;
+    padding: 0 4%;
   }
 }
 
