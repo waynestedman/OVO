@@ -259,6 +259,11 @@ body {
   position: relative;
 }
 
+#hero .hero-img {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
 #hero .heroBox {
   position: absolute;
   top: 12%;
@@ -290,16 +295,12 @@ body {
   width: 100px;
 }
 
-#hero .hero-img {
-  width: 100%;
-  margin: 0 auto 20px auto;
-}
-
 #testimonials {
   background-color: #F5F9FC;
   background-image: url("../../images/white-icon.svg");
   background-repeat: repeat;
   background-size: 48px;
+  margin-bottom: 4rem;
 }
 
 #testimonialsSlider {
@@ -338,44 +339,44 @@ body {
 }
 
 #info {
-  background-image: url("../../images/ingredient.jpg");
-  background-repeat: no-repeat;
-  background-size: 40% 100%;
-  background-position: top left;
+  position: relative;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-#info .infoImg {
-  display: none;
-  width: 50%;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #info .infoTitle {
   width: 50%;
-  margin: 0 auto;
+  margin-left: 32%;
+  z-index: 100;
+}
+
+#info .infoImg {
+  margin-top: -8rem;
+  display: inline-block;
+  width: 50%;
+  z-index: 1;
 }
 
 #info .infoIntro {
-  margin-left: 50%;
-  display: inline-block;
+  position: absolute;
+  top: 100px;
+  right: 10rem;
   width: 40%;
-  max-height: 400px;
 }
 
 #info .infoList {
-  margin-left: 47%;
-  display: inline-block;
-  width: 40%;
+  position: absolute;
+  top: 300px;
+  right: 8rem;
+  width: 45%;
 }
 
 #info .infoList ul {
@@ -548,20 +549,29 @@ body {
     margin: -20px 0 0 0;
   }
   #info {
-    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   #info .infoImg {
     display: block;
     width: 100%;
+    margin-top: 0;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
   #info .infoTitle {
     width: 100%;
+    margin: 0 auto;
   }
   #info .infoIntro {
+    position: relative;
+    top: unset;
+    right: unset;
     margin-left: initial;
+    margin-bottom: 2rem;
     padding: 0 4%;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -569,8 +579,11 @@ body {
     order: 1;
   }
   #info .infoList {
+    position: relative;
+    top: unset;
+    right: unset;
     margin-left: initial;
-    margin-top: -20px;
+    margin-top: 0;
     padding: 0;
     width: 100%;
     -webkit-box-ordinal-group: 4;
@@ -618,18 +631,19 @@ body {
   }
   #closing .closing-img {
     width: 100%;
-    float: none;
   }
   #closing .closingBox {
-    width: 100%;
+    width: 90%;
+    float: none;
+    margin: 0 auto;
   }
   #closing .closingBox .closingBox-title {
     width: 100%;
   }
   #closing .closingBox p {
     max-width: none;
-    margin: 20px auto;
-    padding: 0 4%;
+    margin: 3rem auto;
+    padding: 0;
   }
 }
 

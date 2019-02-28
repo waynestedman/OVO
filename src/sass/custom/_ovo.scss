@@ -46,7 +46,10 @@ $bkgrndBlue: #F5F9FC;
 }
 #hero {
   position: relative;
-
+  .hero-img {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  } // hero-img
   .heroBox {
     position: absolute;
     top: 12%;
@@ -75,16 +78,13 @@ $bkgrndBlue: #F5F9FC;
       width: 100px;
     }
   } // heroBox
-  .hero-img {
-    width: 100%;
-    margin: 0 auto 20px auto;
-  } // hero-img
 } // hero
 #testimonials {
   background-color: $bkgrndBlue;
   background-image: url("../../images/white-icon.svg");
   background-repeat: repeat;
   background-size: 48px;
+  margin-bottom: 4rem;
 }
 #testimonialsSlider {
   width: 90%;
@@ -117,33 +117,49 @@ $bkgrndBlue: #F5F9FC;
   }
 } // testimonials Slider
 #info {
-  background-image: url('../../images/ingredient.jpg');
-  background-repeat: no-repeat;
-  background-size: 40% 100%;
-  background-position: top left;
+  // background-image: url('../../images/ingredient.jpg');
+  // background-repeat: no-repeat;
+  // background-size: 40% 100%;
+  // background-position: top left;
+  position: relative;
   text-align: left;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content: flex-start;
 
-  .infoImg {
-    display: none;
-    width: 50%;
-  }
+
   .infoTitle {
     width: 50%;
-    margin: 0 auto;
+    margin-left: 32%;
+    z-index: 100;
+  }
+  .infoImg {
+    margin-top: -8rem;
+    display: inline-block;
+    width: 50%;
+    // max-width: 591px;
+    // max-height: 740px;
+    z-index: 1;
   }
   .infoIntro {
-    margin-left: 50%;
-    display: inline-block;
+    position: absolute;
+    top: 100px;
+    right: 10rem;
+    // display: inline-block;
     width: 40%;
-    max-height: 400px;
+    // max-height: 300px;
+    // margin-left: 2rem;
   } // infoIntro
   .infoList {
-    margin-left: 47%;
-    display: inline-block;
-    width: 40%;
+    position: absolute;
+    top: 300px;
+    right: 8rem;
+    // padding-left: 46%;
+    // margin-top: -460px;
+    // display: inline-block;
+    width: 45%;
+    // max-height: 400px;
 
     ul {
       list-style-type: none;
@@ -155,11 +171,11 @@ $bkgrndBlue: #F5F9FC;
       background-repeat: no-repeat;
       padding-left: 40px;
     }
-
   } // infoList
 } // info
 #howMade {
   position: relative;
+
   .howMade-img {
     position: relative;
     padding-top: 4rem;
