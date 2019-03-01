@@ -1,7 +1,4 @@
-@media only screen and (max-width: 699px) {
-  // .cms-page-view .column.main p {
-  //   margin: 0 auto 10px auto;
-  // }
+@media only screen and (max-width: 799px) {
   .content-wrapper {
     .slick-list {
       margin-left: 0;
@@ -138,8 +135,8 @@
       }
     } // closingBox
   } // closing
-} // Mobile - everything smaller than 700
-@media only screen and (min-width: 500px) and (max-width: 699px) {
+} // Mobile - everything smaller than 800
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   #hero {
     .heroBox {
       .heroBox-title {
@@ -161,26 +158,23 @@
       }
     } // heroBox
   } // hero
-} // min 500 to max 699 - Bigger Mobile exceptions
+} // min 500 to max 799 - Bigger Mobile & small tablet exceptions
 
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
-  .content-wrapper {
-
-  } // content wrapper
-  // #info {
-  //   .infoIntro {
-  //     margin-left: initial;
-  //     padding: 0 4%;
-  //     width: 100%;
-  //   }
-  //   .infoList {
-  //     margin-left: initial;
-  //     margin-top: -20px;
-  //     padding: 0;
-  //     width: 100%;
-  //   }
-  // } // info
-} // min 700 to max 1024 - Tablet
-
-// @media only screen and (min-width: 380px) and (max-width: 500px) {
-// } // min 376 to max 424 - Mobile exceptions
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  #hero {
+    .heroBox {
+      .heroBox-title {
+        margin-top: 1rem;
+      }
+      p {
+        margin-bottom: 2rem !important;
+      }
+    }
+  } // hero
+  #uses {
+    #usesSlider-text {
+      padding-top: 2.6rem;
+      padding-bottom: 1.4rem;
+    }
+  }
+} // min 800 to max 1024 - Tablet

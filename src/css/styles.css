@@ -283,6 +283,7 @@ body {
   background-image: url("../../images/white-icon.svg");
   background-repeat: repeat;
   background-size: 48px;
+  padding: 3rem 0;
   margin-bottom: 4rem;
 }
 
@@ -370,6 +371,7 @@ body {
 
 #howMade {
   position: relative;
+  margin: 6rem 0;
 }
 
 #howMade .howMade-img {
@@ -393,7 +395,7 @@ body {
 }
 
 #uses {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   position: relative;
 }
 
@@ -413,7 +415,11 @@ body {
   width: 60%;
   font-weight: 300;
   padding-left: 6%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
+}
+
+#uses .usesIntro h3 {
+  font-weight: 300;
 }
 
 #uses #usesSlider-imgs {
@@ -422,7 +428,7 @@ body {
 }
 
 #uses #usesSlider-imgs .use-img {
-  max-width: 700px;
+  max-width: 800px;
   overflow: hidden;
 }
 
@@ -498,7 +504,7 @@ body {
   padding-right: 12%;
 }
 
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 799px) {
   .content-wrapper .slick-list {
     margin-left: 0;
   }
@@ -616,7 +622,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 699px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
   #hero .heroBox .heroBox-title {
     margin-top: 8rem;
   }
@@ -630,6 +636,19 @@ body {
     position: relative;
     margin: 4rem 8rem 0 0;
     width: 120px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  #hero .heroBox .heroBox-title {
+    margin-top: 1rem;
+  }
+  #hero .heroBox p {
+    margin-bottom: 2rem !important;
+  }
+  #uses #usesSlider-text {
+    padding-top: 2.6rem;
+    padding-bottom: 1.4rem;
   }
 }
 

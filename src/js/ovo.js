@@ -14,7 +14,7 @@ $(document).ready(function(){
     swipe: true,
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

@@ -45,6 +45,7 @@ $bkgrndBlue: #F5F9FC;
 }
 #hero {
   position: relative;
+
   .hero-img {
     width: 100%;
     margin: 0 auto 20px auto;
@@ -82,6 +83,7 @@ $bkgrndBlue: #F5F9FC;
   background-image: url("../../images/white-icon.svg");
   background-repeat: repeat;
   background-size: 48px;
+  padding: 3rem 0;
   margin-bottom: 4rem;
 }
 #testimonialsSlider {
@@ -121,7 +123,6 @@ $bkgrndBlue: #F5F9FC;
   flex-direction: row;
   flex-wrap: wrap;
 
-
   .infoTitle {
     width: 50%;
     margin-left: 32%;
@@ -159,6 +160,7 @@ $bkgrndBlue: #F5F9FC;
 } // info
 #howMade {
   position: relative;
+  margin: 6rem 0;
 
   .howMade-img {
     position: relative;
@@ -180,7 +182,7 @@ $bkgrndBlue: #F5F9FC;
 
 } // howMade
 #uses {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   position: relative;
 
   .uses-title {
@@ -198,13 +200,17 @@ $bkgrndBlue: #F5F9FC;
     width: 60%;
     font-weight: 300;
     padding-left: 6%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
+
+    h3 {
+      font-weight: 300;
+    }
   }
   #usesSlider-imgs {
     width: 52%;
     float: right;
     .use-img {
-      max-width: 700px;
+      max-width: 800px;
       overflow: hidden;
 
       img {
