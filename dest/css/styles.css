@@ -676,7 +676,14 @@ body {
   }
   #uses #usesSlider-text {
     padding-top: 2.6rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 3.2rem;
+  }
+  #uses #usesSlider-text .slick-dots {
+    bottom: 35px;
+    margin-left: 0;
+  }
+  #uses #usesSlider-text .use-text {
+    max-height: 336px;
   }
 }
 

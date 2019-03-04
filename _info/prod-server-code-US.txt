@@ -697,7 +697,14 @@ $(document).ready(function(){
   }
   #uses #usesSlider-text {
     padding-top: 2.6rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.8rem;
+  }
+  #uses #usesSlider-text .slick-dots {
+    bottom: 35px;
+    margin-left: 0;
+  }
+  #uses #usesSlider-text .use-text {
+    max-height: 336px;
   }
 }
 --></style>
@@ -706,7 +713,7 @@ $(document).ready(function(){
     <div class="hero-img">
       <picture>
         <source srcset="/media/wysiwyg/content/product/ovo/hero-m.jpg" media="(max-width: 499px)" />
-        <source srcset="/media/wysiwyg/content/product/ovo/hero-m-bigger.jpg" media="(max-width: 699px)" />
+        <source srcset="/media/wysiwyg/content/product/ovo/hero-m-bigger.jpg" media="(max-width: 799px)" />
         <img src="/media/wysiwyg/content/product/ovo/hero.jpg" alt="DHC olive virgin oil">
       </picture>
     </div>
@@ -773,7 +780,7 @@ $(document).ready(function(){
     </div>
     <div class="infoImg">
       <picture>
-        <source srcset="/media/wysiwyg/content/product/ovo/ingredient-m.jpg" media="(max-width: 699px)" />
+        <source srcset="/media/wysiwyg/content/product/ovo/ingredient-m.jpg" media="(max-width: 799px)" />
         <img src="/media/wysiwyg/content/product/ovo/ingredient.jpg" alt="virgin olive oil the perfect ingredient">
       </picture>
     </div>
@@ -814,7 +821,7 @@ $(document).ready(function(){
   <section id="howMade">
     <div class="howMade-img">
       <picture>
-        <source srcset="/media/wysiwyg/content/product/ovo/harvest-m.jpg" media="(max-width: 699px)" />
+        <source srcset="/media/wysiwyg/content/product/ovo/harvest-m.jpg" media="(max-width: 799px)" />
         <img src="/media/wysiwyg/content/product/ovo/harvest.jpg" alt="landscape showing an olive harvest">
       </picture>
     </div>
@@ -837,25 +844,25 @@ $(document).ready(function(){
     <div id="usesSlider-imgs">
       <div class="use-img">
         <picture>
-          <source srcset="/media/wysiwyg/content/product/ovo/more-moisture-m.jpg" media="(max-width: 699px)" />
+          <source srcset="/media/wysiwyg/content/product/ovo/more-moisture-m.jpg" media="(max-width: 799px)" />
           <img src="/media/wysiwyg/content/product/ovo/more-moisture.jpg" alt="More moisture">
         </picture>
       </div>
       <div class="use-img">
         <picture>
-          <source srcset="/media/wysiwyg/content/product/ovo/eye-care-m.jpg" media="(max-width: 699px)" />
+          <source srcset="/media/wysiwyg/content/product/ovo/eye-care-m.jpg" media="(max-width: 799px)" />
           <img src="/media/wysiwyg/content/product/ovo/eye-care.jpg" alt="Simply soft">
         </picture>
       </div>
       <div class="use-img">
         <picture>
-          <source srcset="/media/wysiwyg/content/product/ovo/treat-hair-m.jpg" media="(max-width: 699px)" />
+          <source srcset="/media/wysiwyg/content/product/ovo/treat-hair-m.jpg" media="(max-width: 799px)" />
           <img src="/media/wysiwyg/content/product/ovo/treat-hair.jpg" alt="Treat your hair">
         </picture>
       </div>
       <div class="use-img">
         <picture>
-          <source srcset="/media/wysiwyg/content/product/ovo/nurture-nails-m.jpg" media="(max-width: 699px)" />
+          <source srcset="/media/wysiwyg/content/product/ovo/nurture-nails-m.jpg" media="(max-width: 799px)" />
           <img src="/media/wysiwyg/content/product/ovo/nurture-nails.jpg" alt="Nurture your nails">
         </picture>
       </div>
@@ -883,7 +890,7 @@ $(document).ready(function(){
   <section id="closing">
     <div class="closing-img">
       <picture>
-        <source srcset="/media/wysiwyg/content/product/ovo/products-m.jpg" media="(max-width: 699px)" />
+        <source srcset="/media/wysiwyg/content/product/ovo/products-m.jpg" media="(max-width: 799px)" />
         <img src="/media/wysiwyg/content/product/ovo/products.jpg" alt="DHC Deep Cleansing Oil, Olive Virgin Oil, Mild Soap, and natural Mild Lotion">
       </picture>
     </div>

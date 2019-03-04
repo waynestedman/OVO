@@ -174,7 +174,15 @@
   #uses {
     #usesSlider-text {
       padding-top: 2.6rem;
-      padding-bottom: 1.4rem;
+      padding-bottom: 3.2rem;
+
+      .slick-dots {
+        bottom: 35px;
+        margin-left: 0;
+      }
+      .use-text {
+        max-height: 336px;
+      }
     }
   }
 } // min 800 to max 1024 - Tablet
